@@ -1,0 +1,12 @@
+services:
+  sqk-site:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: sqk-site
+    ports:
+      - "30005:3000"
+    restart: unless-stopped
+    environment:
+      NODE_ENV: production
+      PORT: 3000
