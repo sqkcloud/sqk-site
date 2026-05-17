@@ -47,7 +47,7 @@ export default function InvestorsPage() {
           <h3 className="text-2xl font-semibold text-slate-950">{t.thesisTitle}</h3>
           <p className="mt-4 leading-8 text-slate-600">{t.thesisBody}</p>
           <div className="mt-6 flex flex-wrap gap-3">
-            <a href="/SQK_Investor_White_Paper_2026_Public_Release.docx" className="rounded-xl border border-blue-200 bg-white px-5 py-3 text-sm font-medium text-blue-700 transition hover:bg-blue-50">{content[locale].cta.whitepaper}</a>
+            <a href="/SQK_Investor_White_Paper_2026_Public_Release.pdf" className="rounded-xl border border-blue-200 bg-white px-5 py-3 text-sm font-medium text-blue-700 transition hover:bg-blue-50">{content[locale].cta.whitepaper}</a>
             <a href="/SQK_Company_Overview_2026.md" download className="rounded-xl border border-blue-200 bg-white px-5 py-3 text-sm font-medium text-blue-700 transition hover:bg-blue-50">{content[locale].cta.overview}</a>
           </div>
         </div>

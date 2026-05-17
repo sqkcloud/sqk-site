@@ -259,7 +259,7 @@ export default function HomePage() {
                 {t.cta.contact}
               </Link>
               <a
-                href="/SQK_Investor_White_Paper_2026_Public_Release.docx"
+                href="/SQK_Investor_White_Paper_2026_Public_Release.pdf"
                 className="rounded-xl border border-white/20 px-6 py-3.5 text-sm font-medium text-white transition hover:border-white/40 hover:bg-white/5"
               >
                 {t.cta.whitepaper}
