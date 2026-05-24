@@ -1,6 +1,6 @@
-# SQK Beta Website
+# SQK Website Source Package
 
-Official beta website source for **SQK**, built with **Next.js**, **React**, and **Tailwind CSS**.
+Official website source for **SQK**, built with **Next.js**, **React**, and **Tailwind CSS**.
 
 This project is designed as an investor-facing and partner-facing corporate website centered on **QMedic** as the lead commercial product, supported by SQK's broader **Quantum-AI-HPC** platform.
 
@@ -27,9 +27,9 @@ The website presents:
 - `/about` About SQK
 - `/investors` Investor overview
 - `/news` News and milestone page
-- `/news/[slug]` News detail template
+- `/news/[slug]` News detail page
 - `/contact` Contact page
-- `/api/contact` Local backend endpoint for contact form submission
+- `/api/contact` Contact form submission endpoint
 
 ## Key features
 
@@ -104,7 +104,7 @@ http://localhost:30005
 
 ## White paper file
 
-The public beta build uses the PDF white paper placed in:
+The site uses the PDF white paper placed in:
 
 ```text
 public/SQK_Investor_White_Paper_2026_Public_Release.pdf
@@ -112,7 +112,7 @@ public/SQK_Investor_White_Paper_2026_Public_Release.pdf
 
 ## Contact form behavior
 
-The contact form is connected to a local backend endpoint:
+The contact form posts to:
 
 ```text
 POST /api/contact
@@ -124,9 +124,9 @@ Submitted messages are stored locally on the server side. Before a public produc
 - Resend
 - HubSpot / CRM integration
 
-## Beta release notes
+## Release notes
 
-This is a **beta deployment source package**.
+This source package is intended for staging and public deployment.
 Recommended checks before wider public release:
 - review all public claims and partner references
 - confirm all white paper links and PDF filenames
@@ -143,4 +143,4 @@ Recommended checks before wider public release:
 
 ## License / usage
 
-Internal SQK beta website source package for review, staging, and controlled public deployment.
+SQK website source package for review, staging, and controlled public deployment.

@@ -5,7 +5,7 @@ import { SiteFooter, SiteHeader } from '@/components/site-shell';
 
 export const metadata: Metadata = {
   title: 'SQK | Quantum-AI-HPC Platforms',
-  description: 'SQK corporate and investor-facing website',
+  description: 'SQK Quantum-AI-HPC platform for QMedic, QTAU, QPINN, QPR, QWIND, and hybrid HPC deployment' ,
   icons: {
     icon: '/favicon.ico',
     shortcut: '/favicon.ico',

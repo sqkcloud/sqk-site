@@ -8,28 +8,28 @@ import { content } from '@/lib/content';
 type SubmitState = 'idle' | 'submitting' | 'success' | 'error';
 
 const interestOptions = {
-  en: ['QMedic', 'QTAU', 'Qukkos', 'QPINN', 'SuperQuantumStation', 'Investors', 'Partnerships'],
-  ko: ['QMedic', 'QTAU', 'Qukkos', 'QPINN', 'SuperQuantumStation', '투자자', '파트너십'],
-  fr: ['QMedic', 'QTAU', 'Qukkos', 'QPINN', 'SuperQuantumStation', 'Investisseurs', 'Partenariats'],
+  en: ['QMedic', 'QTAU', 'Qukkos', 'QPINN', 'QPR', 'QWIND', 'HPC Integration', 'Investors', 'Partnerships'],
+  ko: ['QMedic', 'QTAU', 'Qukkos', 'QPINN', 'QPR', 'QWIND', 'HPC 통합', '투자자', '파트너십'],
+  fr: ['QMedic', 'QTAU', 'Qukkos', 'QPINN', 'QPR', 'QWIND', 'Intégration HPC', 'Investisseurs', 'Partenariats'],
 };
 
 const messages = {
   en: {
     success: 'Your inquiry has been saved successfully. We will review it shortly.',
     error: 'We could not submit your inquiry. Please try again.',
-    helper: 'This form is now connected to a local backend endpoint and stores submissions on the server.',
+    helper: 'Use the downloads below for investor and partner materials, or submit an inquiry to discuss pilots, validation programs, or co-development.',
     downloads: 'Downloads',
   },
   ko: {
     success: '문의가 정상적으로 저장되었습니다. 곧 검토하겠습니다.',
     error: '문의 제출에 실패했습니다. 다시 시도해 주세요.',
-    helper: '이 폼은 이제 로컬 백엔드 엔드포인트와 연결되어 서버에 문의 내용을 저장합니다.',
+    helper: '아래 자료를 통해 투자자·파트너 문서를 확인하고, 파일럿·검증 프로그램·공동개발 논의를 위해 문의를 제출할 수 있습니다.',
     downloads: '다운로드',
   },
   fr: {
     success: 'Votre demande a bien été enregistrée. Nous l’examinerons rapidement.',
     error: 'Nous n’avons pas pu envoyer votre demande. Veuillez réessayer.',
-    helper: 'Ce formulaire est désormais relié à un endpoint backend local qui enregistre les demandes sur le serveur.',
+    helper: 'Téléchargez ci-dessous les documents investisseurs et partenaires, ou envoyez une demande pour discuter de pilotes, de validation ou de co-développement.',
     downloads: 'Téléchargements',
   },
 };

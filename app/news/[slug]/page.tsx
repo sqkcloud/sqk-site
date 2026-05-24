@@ -18,8 +18,8 @@ export default function NewsDetailPage() {
         <img src={params.slug === 'medical-imaging' ? '/qmedic-card.png' : params.slug === 'quantum-hpc' ? '/qtau-qmc.png' : '/hero-main.png'} alt={article.title} style={{ objectPosition: 'center top' }} />
       </div>
       <div className="mt-10 space-y-5 text-slate-600 leading-8">
-        <p>This is a reusable news detail template intended for future milestones, partnership announcements, investor updates, and product communications.</p>
-        <p>The layout can later be connected to a CMS or static content pipeline. For now, it acts as a polished placeholder that keeps the SQK story coherent across strategy, healthcare, quantum-HPC, and commercialization themes.</p>
+        <p>SQK organizes public updates around commercialization, validation, publications, and ecosystem traction so that customers and investors can follow how QMedic and the broader Quantum-AI-HPC stack are progressing.</p>
+        <p>These milestone pages help connect healthcare adoption, hybrid HPC execution, industrial collaboration, and platform evidence into one coherent operating narrative.</p>
       </div>
       <Link href="/news" className="mt-10 inline-block text-sm font-medium text-blue-700">← Back to News</Link>
     </main>
