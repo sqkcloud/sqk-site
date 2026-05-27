@@ -2,6 +2,8 @@
 
 import { useLocale } from '@/components/locale-provider';
 import { SectionTitle } from '@/components/site-shell';
+import { Reveal } from '@/components/reveal';
+import { btnChip } from '@/components/ui';
 import { content } from '@/lib/content';
 
 const investorStats = {
@@ -30,39 +32,36 @@ export default function InvestorsPage() {
   const t = content[locale].investorsPage;
   const stats = investorStats[locale];
   return (
-    <main className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
+    <main className="mx-auto max-w-7xl px-6 py-20 lg:px-8 lg:py-24">
       <SectionTitle eyebrow={t.eyebrow} title={t.title} body={t.intro} />
 
-      <div className="mt-10 grid gap-4 md:grid-cols-4">
-        {stats.map(([value, label]) => (
-          <div key={label} className="rounded-2xl border border-slate-200 bg-slate-50 p-6">
-            <div className="text-3xl font-semibold text-slate-950">{value}</div>
+      <div className="mt-12 grid gap-4 md:grid-cols-4">
+        {stats.map(([value, label], index) => (
+          <Reveal key={label} delay={index * 60} className="rounded-2xl border border-slate-200/80 bg-gradient-to-b from-slate-50 to-white p-6 shadow-card">
+            <div className="text-3xl font-semibold tracking-tight text-blue-700">{value}</div>
             <div className="mt-2 text-sm text-slate-600">{label}</div>
-          </div>
+          </Reveal>
         ))}
       </div>
 
-      <div className="mt-10 grid gap-8 lg:grid-cols-[0.88fr_1.12fr]">
-        <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-[0_10px_35px_rgba(15,23,42,0.05)]">
-          <h3 className="text-2xl font-semibold text-slate-950">{t.thesisTitle}</h3>
+      <div className="mt-8 grid gap-8 lg:grid-cols-[0.88fr_1.12fr]">
+        <div className="rounded-3xl border border-slate-200/80 bg-white p-8 shadow-card">
+          <h3 className="text-2xl font-semibold tracking-tight text-slate-950">{t.thesisTitle}</h3>
           <p className="mt-4 leading-8 text-slate-600">{t.thesisBody}</p>
           <div className="mt-6 flex flex-wrap gap-3">
-            <a href="/SQK_Investor_White_Paper_2026_Public_Release.pdf" className="rounded-xl border border-blue-200 bg-white px-5 py-3 text-sm font-medium text-blue-700 transition hover:bg-blue-50">{content[locale].cta.whitepaper}</a>
-            <a href="/SQK_Company_Overview_2026.md" download className="rounded-xl border border-blue-200 bg-white px-5 py-3 text-sm font-medium text-blue-700 transition hover:bg-blue-50">{content[locale].cta.overview}</a>
+            <a href="/SQK_Investor_White_Paper_2026_Public_Release.pdf" className={`${btnChip} px-5 py-3 text-sm`}>{content[locale].cta.whitepaper}</a>
+            <a href="/SQK_Company_Overview_2026.md" download className={`${btnChip} px-5 py-3 text-sm`}>{content[locale].cta.overview}</a>
           </div>
         </div>
 
-        <div className="rounded-3xl border border-slate-200 bg-gradient-to-b from-slate-50 to-white p-8 shadow-[0_10px_35px_rgba(15,23,42,0.05)]">
+        <div className="rounded-3xl border border-slate-200/80 bg-gradient-to-b from-slate-50 to-white p-8 shadow-card">
           <h3 className="text-2xl font-semibold text-slate-950">{t.timelineTitle}</h3>
-          <div className="mt-8 hidden items-center gap-4 lg:flex">
+          <div className="mt-8 hidden items-stretch gap-3 lg:flex">
             {t.timeline.map((item, index) => (
-              <div key={item.year} className="flex flex-1 items-center gap-4">
-                <div className="flex flex-col gap-3 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-                  <div className="text-sm font-semibold uppercase tracking-[0.18em] text-blue-700">{item.year}</div>
-                  <div className="text-lg font-semibold text-slate-950">{item.title}</div>
-                  <p className="text-sm leading-6 text-slate-600">{item.body}</p>
-                </div>
-                {index < t.timeline.length - 1 ? <div className="h-1 flex-1 rounded-full bg-blue-200" /> : null}
+              <div key={item.year} className="flex flex-1 flex-col gap-3 rounded-2xl border border-slate-200/80 bg-white p-6 shadow-card transition-colors hover:border-blue-200">
+                <div className="text-sm font-semibold uppercase tracking-[0.18em] text-blue-700">{item.year}</div>
+                <div className="text-lg font-semibold tracking-tight text-slate-950">{item.title}</div>
+                <p className="text-sm leading-6 text-slate-600">{item.body}</p>
               </div>
             ))}
           </div>
@@ -78,12 +77,12 @@ export default function InvestorsPage() {
         </div>
       </div>
 
-      <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-        {t.pillars.map((card) => (
-          <div key={card.title} className="rounded-2xl border border-slate-200 bg-white p-6">
-            <h3 className="text-xl font-semibold text-slate-950">{card.title}</h3>
-            <p className="mt-3 text-sm leading-6 text-slate-600">{card.body}</p>
-          </div>
+      <div className="mt-8 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+        {t.pillars.map((pillar, index) => (
+          <Reveal key={pillar.title} delay={index * 60} className="rounded-2xl border border-slate-200/80 bg-white p-6 shadow-card transition-colors hover:border-blue-200">
+            <h3 className="text-xl font-semibold tracking-tight text-slate-950">{pillar.title}</h3>
+            <p className="mt-3 text-sm leading-6 text-slate-600">{pillar.body}</p>
+          </Reveal>
         ))}
       </div>
     </main>

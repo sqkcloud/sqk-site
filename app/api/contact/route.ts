@@ -8,6 +8,7 @@ type ContactPayload = {
   email?: string;
   company?: string;
   interest?: string;
+  phone?: string;
   message?: string;
   locale?: string;
 };
@@ -23,6 +24,7 @@ export async function POST(req: Request) {
     const email = body.email?.trim() ?? '';
     const company = body.company?.trim() ?? '';
     const interest = body.interest?.trim() ?? '';
+    const phone = body.phone?.trim() ?? '';
     const message = body.message?.trim() ?? '';
     const locale = body.locale?.trim() ?? 'en';
 
@@ -40,6 +42,7 @@ export async function POST(req: Request) {
       email,
       company,
       interest,
+      phone,
       message,
       locale,
       source: 'sqk_photonic_site_v4',
