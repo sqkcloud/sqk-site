@@ -79,7 +79,7 @@ export default function ContactPage() {
             <div className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-700">{ui.downloads}</div>
             <div className="mt-4 flex flex-wrap gap-3">
               <a href="/SQK_Investor_White_Paper_2026_Public_Release.pdf" className="rounded-xl border border-blue-200 bg-white px-5 py-3 text-sm font-medium text-blue-700 transition hover:bg-blue-50">{content[locale].cta.whitepaper}</a>
-              <a href="/SQK_Company_Overview_2026.md" download className="rounded-xl border border-blue-200 bg-white px-5 py-3 text-sm font-medium text-blue-700 transition hover:bg-blue-50">{content[locale].cta.overview}</a>
+              <a href="/SQK_Investor_White_Paper_2026_Public_Release.pdf" download className="rounded-xl border border-blue-200 bg-white px-5 py-3 text-sm font-medium text-blue-700 transition hover:bg-blue-50">{content[locale].cta.overview}</a>
             </div>
             <p className="mt-4 text-sm leading-6 text-slate-600">{ui.helper}</p>
           </div>

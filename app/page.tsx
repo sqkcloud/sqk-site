@@ -69,7 +69,7 @@ export default function HomePage() {
             <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-600 lg:text-xl">{t.hero.body}</p>
             <div className="mt-10 flex flex-wrap gap-4">
               <a href="#solutions" className={subtleButton}>{t.hero.primary}</a>
-              <div className="flex flex-wrap gap-4"><Link href="/investors" className={subtleButton}>{t.hero.secondary}</Link><a href="/SQK_Company_Overview_2026.md" download className={subtleButton}>{t.cta.overview}</a></div>
+              <div className="flex flex-wrap gap-4"><Link href="/investors" className={subtleButton}>{t.hero.secondary}</Link><a href="/SQK_Investor_White_Paper_2026_Public_Release.pdf" download className={subtleButton}>{t.cta.overview}</a></div>
             </div>
           </div>
         </div>
@@ -265,7 +265,7 @@ export default function HomePage() {
                 {t.cta.whitepaper}
               </a>
               <a
-                href="/SQK_Company_Overview_2026.md"
+                href="/SQK_Investor_White_Paper_2026_Public_Release.pdf"
                 download
                 className="rounded-xl border border-white/20 px-6 py-3.5 text-sm font-medium text-white transition hover:border-white/40 hover:bg-white/5"
               >
