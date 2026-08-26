@@ -65,7 +65,17 @@ export default function HomePage() {
         <div className="mx-auto max-w-[1600px] px-6 py-14 lg:px-8 lg:py-16">
           <div className="max-w-5xl">
             <div className="inline-flex rounded-full border border-blue-200 bg-blue-50 px-4 py-2 text-xs font-semibold uppercase tracking-[0.25em] text-blue-700">{t.hero.badge}</div>
-            <h1 className="mt-8 text-5xl font-semibold tracking-tight text-slate-950 sm:text-6xl lg:text-7xl">{t.hero.title}</h1>
+            <h1 className="mt-8 text-5xl font-semibold tracking-tight text-slate-950 sm:text-6xl lg:text-7xl">
+              {locale === 'en' ? (
+                <>
+                  Trusted Quantum-AI-HPC platforms
+                  <br className="hidden md:block" />
+                  for medical imaging, scientific modeling,
+                  <br className="hidden md:block" />
+                  and enterprise-scale hybrid computing.
+                </>
+              ) : t.hero.title}
+            </h1>
             <p className="mt-6 max-w-4xl text-lg leading-8 text-slate-600 lg:text-xl">{t.hero.body}</p>
             <div className="mt-10 flex flex-wrap gap-4">
               <a href="#solutions" className={subtleButton}>{t.hero.primary}</a>
