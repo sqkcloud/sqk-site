@@ -120,8 +120,8 @@ export const content: Record<Locale, SiteDict> = {
     nav: { home: 'Home', about: 'About SQK', solutions: 'Solutions', technology: 'Technology', applications: 'Applications', investors: 'Investors', news: 'News', contact: 'Contact' },
     hero: {
       badge: 'Quantum · AI · HPC · Medical Imaging',
-      title: 'Trusted computing for medical imaging, scientific modeling, and hybrid HPC operations.',
-      body: 'SQK develops deployable Quantum-AI-HPC systems that connect medical imaging, physics-informed modeling, hybrid orchestration, and scalable computing. QMedic, QTAU, QPINN, Qukkos, and GPU/HPC technologies form a reusable platform for research and enterprise deployment.',
+      title: 'Trusted Quantum-AI-HPC platforms for medical imaging, scientific modeling, and enterprise-scale hybrid computing.',
+      body: 'SQK builds deployable Quantum-AI-HPC platforms that unify medical imaging, physics-informed modeling, hybrid orchestration, and scalable compute infrastructure. QMedic, QTAU, QPINN, Qukkos, and GPU/HPC technologies together enable reusable systems for research and enterprise environments.',
       primary: 'Explore Solutions',
       secondary: 'Investor Overview',
     },
