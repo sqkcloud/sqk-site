@@ -68,11 +68,12 @@ export default function HomePage() {
             <h1 className="mt-8 text-5xl font-semibold tracking-tight text-slate-950 sm:text-6xl lg:text-7xl">
               {locale === 'en' ? (
                 <>
-                  Trusted Quantum-AI-HPC platforms
-                  <br className="hidden md:block" />
-                  for medical imaging, scientific modeling,
-                  <br className="hidden md:block" />
-                  and enterprise-scale hybrid computing.
+                  <span className="md:hidden">
+                    Trusted Quantum-AI-HPC platforms for medical imaging and scientific modeling, with enterprise-scale hybrid computing.
+                  </span>
+                  <span className="hidden md:block whitespace-nowrap">Trusted Quantum-AI-HPC platforms</span>
+                  <span className="hidden md:block whitespace-nowrap">for medical imaging and scientific modeling,</span>
+                  <span className="hidden md:block whitespace-nowrap">with enterprise-scale hybrid computing.</span>
                 </>
               ) : t.hero.title}
             </h1>
