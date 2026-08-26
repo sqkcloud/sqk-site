@@ -63,7 +63,7 @@ export default function HomePage() {
           />
         </div>
         <div className="mx-auto max-w-[1600px] px-6 py-14 lg:px-8 lg:py-16">
-          <div className="max-w-5xl">
+          <div className="max-w-6xl">
             <div className="inline-flex rounded-full border border-blue-200 bg-blue-50 px-4 py-2 text-xs font-semibold uppercase tracking-[0.25em] text-blue-700">{t.hero.badge}</div>
             <h1 className="mt-8 text-5xl font-semibold tracking-tight text-slate-950 sm:text-6xl lg:text-7xl">
               {locale === 'en' ? (
